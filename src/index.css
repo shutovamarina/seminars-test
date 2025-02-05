@@ -1,13 +1,104 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: Arial, sans-serif;
+    background-color: #ebd8d8;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+
+/* Сетка карточек семинаров */
+
+.seminars-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.seminar-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.seminar-card:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #444;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    width: 200px;
+    border-radius: 8px;
+}
+
+
+/* Кнопки */
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #5bc0de;
+    color: white;
+}
+
+.delete-all-container {
+    margin-top: 20px;
+}
+
+.delete-all-container button {
+    background-color: #ff6347;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
 }
